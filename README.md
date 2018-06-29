@@ -6,7 +6,7 @@ The latest version, enumdb v2.0, has been adapted for larger environments:
 * Threading has been added to expedite brute forcing and enumeration on larger networks.
 * Enumdb no longer generates reports by default. Reporting (csv/xlsx) must be defined in the command line arguments.
 * When extracting data for reports, users can now define a limit on the number of rows selected. The default value of 100, can be modified at the top of enumdb.py.
-* Enumdb's output formatting has been modifed to provide more concise feedback when enumerating large amounts of data.
+* Enumdb's output formatting has been modified to provide more concise feedback when enumerating large amounts of data.
 
 *Enumdb is written in python3 and tested on Kali Linux, use the setup.sh script to ensure all required libraries are installed.*
 
