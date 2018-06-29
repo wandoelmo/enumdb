@@ -1,12 +1,12 @@
 # enumdb
-Enumdb is a brute force and post exploitation tool for MySQL and MSSQL databases. When provided a list of usernames and/or passwords, it will cycle through the given targets looking for valid credentials. By default enumdb will use newly discovered credentials to search for sensitive information in the database through keyword searches on the table or column names. This information can then be extracted and reported to a .csv or .xlsx output file. See the Usage and All Options sections for more detialed usage.
+Enumdb is a brute force and post exploitation tool for MySQL and MSSQL databases. When provided a list of usernames and/or passwords, it will cycle through each targeted host looking for valid credentials. By default, enumdb will use newly discovered credentials to search for sensitive information in the host's databases via keyword searches on the table or column names. This information can then be extracted and reported to a .csv or .xlsx output file. See the Usage and All Options sections for more detialed usage and examples.
 
 The latest version, enumdb v2.0, has been adapted for larger environments:
 * Keyword searches can now be conducted on table or column names to identify sensitive information. These terms can be customized at the top of enumdb.py.
 * Threading has been added to expedite brute forcing and enumeration on larger networks.
 * Enumdb no longer generates reports by default. Reporting (csv/xlsx) must be defined in the command line arguments.
 * When extracting data for reports, users can now define a limit on the number of rows selected. The default value of 100, can be modified at the top of enumdb.py.
-* Lastly, more concise output when enumerating large amounts of data.
+* Enumdb's output formatting has modifed to provide more concise feedback when enumerating large amounts of data.
 
 *Enumdb is written in python3 and tested on Kali Linux, use the setup.sh script to ensure all required libraries are installed.*
 
