@@ -1,5 +1,5 @@
 # enumdb
-Enumdb is brute force and post exploitation tool for MySQL and MSSQL databases. When provided a list of usernames and/or passwords, it will cycle through the given targets looking for valid credentials. By default enumdb will use newly found, or given, credentials, to search for sensitive information such as: usernames, passwords, ssn, credit cards, etc. Taking the manual work out of post exploitation!
+Enumdb is a brute force and post exploitation tool for MySQL and MSSQL databases. When provided a list of usernames and/or passwords, it will cycle through the given targets looking for valid credentials. By default enumdb will use newly discovered credentials to search for sensitive information in the database through keyword searches on the table or column names. This information can then be extracted and reported to a .csv or .xlsx output file. See the Usage and All Options sections for more detialed usage.
 
 The latest version, enumdb v2.0, has been adapted for larger environments:
 * Keyword searches can now be conducted on table or column names to identify sensitive information. These terms can be customized at the top of enumdb.py.
