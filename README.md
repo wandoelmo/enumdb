@@ -44,6 +44,6 @@ In the Linux terminal run:
     -report REPORT        Output Report: csv, excel (Default: None)
     -t DBTYPE             Database types currently supported: mssql, mysql
     -columns              Search for key words in column names (Default: table names)
-    ﻿-v                   Show keyword matches that respond with no data
+    -v                    Show keyword matches that respond with no data
     -brute                Brute force only, do not enumerate
     --dns                 Force dns name during execution
